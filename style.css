@@ -1,0 +1,53 @@
+/* google Fontes Inter */
+/* font-family: 'Inter', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+:root{
+    /* Color */
+    --color-background-body: #E5E5E5;
+    --color-background-aside: #fff;
+    --color-background-icons-social: #FFB400;
+
+    /* Spaces */
+    --aside-width: 300px;
+
+
+}
+*{
+    padding: 0;
+    margin: 0;
+
+}
+
+.text-medium{
+    font-weight: 500;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+    background-color: var(--color-background-body);
+}
+
+aside{
+    width: var(--aside-width);
+    background-color: var(--color-background-aside);
+}
+
+.icon{
+    width: 24px;
+    height: 24px;
+}
+
+.px-14{
+    width: 14px;
+    height: 14px;
+}
+
+.color-bg-icons-social{
+    background-color: var(--color-background-icons-social);
+}
+
+.row{
+    --bs-gutter-x: 0;
+}
