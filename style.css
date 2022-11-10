@@ -8,6 +8,7 @@
     --color-background-body: #E5E5E5;
     --color-background-aside: #fff;
     --color-background-icons-social: #FFB400;
+    --color-background-icons-social-hover:#ff7b00dc;
 
     /* Spaces */
     --aside-width: 300px;
@@ -27,6 +28,8 @@
 body{
     font-family: 'Inter', sans-serif;
     background-color: var(--color-background-body);
+    display: flex;
+
 }
 
 aside{
@@ -50,4 +53,66 @@ aside{
 
 .row{
     --bs-gutter-x: 0;
+}
+
+span{
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+}
+
+span div{
+    background-color: var(--color-background-icons-social);
+    height: 100%;
+    
+}
+
+.progress{
+    --bs-progress-bar-bg: var(--color-background-icons-social);
+    
+}
+
+.radius{
+    border: 1px var(--color-background-icons-social) solid;
+    border-radius: 16px;
+    padding: 1px;
+}
+ul{
+    margin: 0;
+    padding-block-start: 0;
+    padding-left: inherit;
+}
+
+li{
+    list-style-image: url('./assets/images/list.svg');  
+
+}
+
+.btn-cv{
+    --bs-btn-color: #000;
+    --bs-btn-bg: var(--color-background-icons-social);
+    --bs-btn-border-color: var(--color-background-icons-social);
+    --bs-btn-hover-color: #000;
+    --bs-btn-hover-bg: var(--color-background-icons-social-hover);
+    --bs-btn-hover-border-color: var(--color-background-icons-social-hover);
+    --bs-btn-focus-shadow-rgb: 11,172,204;
+    --bs-btn-active-color: #000;
+    --bs-btn-active-bg: var(--color-background-icons-social);
+    --bs-btn-active-border-color: var(--color-background-icons-social);
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #000;
+    --bs-btn-disabled-bg: #0dcaf010;
+    --bs-btn-disabled-border-color: #0dcaf011;
+}
+
+.hero{
+    background-image: url('./assets/images/background.svg');
+    width: auto;
+}
+
+.my-6{
+    margin-top: 5rem!important;
+    margin-bottom: 3rem!important;
 }
