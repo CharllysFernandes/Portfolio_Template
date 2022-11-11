@@ -9,11 +9,19 @@
     --color-background-aside: #fff;
     --color-background-icons-social: #FFB400;
     --color-background-icons-social-hover:#ff7b00dc;
+    --color-background-icons-nav: #F0F0F6;
+    --color-bagkroundd-hover-nav: #FFB400;
+    --color-text-card:#2B2B2B;
 
     /* Spaces */
     --aside-width: 300px;
 
+    /* fonts sizes */
+    --text-cards-titles:  1.025rem;
+    --text-cards-subtitles: 0.738rem;
 
+    /* bootstrap custum */
+    --bs-primary-rgb: 255, 180, 0;
 }
 *{
     padding: 0;
@@ -25,6 +33,11 @@
     font-weight: 500;
 }
 
+.bg-background-light{
+    background: var(--color-background-aside)!important;
+}
+
+
 body{
     font-family: 'Inter', sans-serif;
     background-color: var(--color-background-body);
@@ -34,7 +47,9 @@ body{
 
 aside{
     width: var(--aside-width);
+    height: fit-content;
     background-color: var(--color-background-aside);
+
 }
 
 .icon{
@@ -115,4 +130,45 @@ li{
 .my-6{
     margin-top: 5rem!important;
     margin-bottom: 3rem!important;
+}
+
+nav{
+    background-color: var(--color-background-aside);
+    height: 100%;
+}
+
+.list-group-bg{
+    background-color: var(--color-background-icons-nav);
+}
+
+.bg-light{
+    background-color: var(--color-background-icons-nav) !important;
+}
+
+.card h4{
+    font-size: var(--text-cards-titles);
+    color: var(--color-text-card);
+}
+
+.card h5 {
+    font-size: var(--text-cards-subtitles);
+    color: var(--color-text-card);
+}
+
+.list-style-check{
+    list-style-image: url(./assets/images/list-check.svg) !important;
+}
+
+.list-style-uncheck{
+    list-style-image: url('./assets/images/list-uncheck.svg') !important;
+}
+
+.fs-small{
+    font-size: small;
+}
+.fs-smaller{
+    font-size: smaller;
+}
+.fs-medium{
+    font-size: medium;
 }
