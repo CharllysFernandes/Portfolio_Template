@@ -22,6 +22,7 @@
 
     /* bootstrap custum */
     --bs-primary-rgb: 255, 180, 0;
+    --bs-info-rgb: 255, 180, 0;
 }
 *{
     padding: 0;
@@ -50,6 +51,9 @@ aside{
     height: fit-content;
     background-color: var(--color-background-aside);
 
+}
+img{
+    object-fit: cover;
 }
 
 .icon{
